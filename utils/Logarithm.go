@@ -8,7 +8,7 @@ import (
 )
 
 // 对数器
-func Logar(fn1 func(nums []int) []int) {
+func Logar(fn1 func(nums []int, left, right int) []int) {
 	testTimes := 50000 // 测试次数
 	maxSize := 1000    //最大测试容量
 	maxNum := 1000     //最大测试数据
@@ -21,7 +21,7 @@ func Logar(fn1 func(nums []int) []int) {
 		// 接收用于测试的两个数组
 		arr1, arr2 := randomArr(maxSize, maxNum)
 		// 执行自己的方法
-		nums1 := fn1(arr1)
+		nums1 := fn1(arr1, 0, len(arr1)-1)
 		// 官方方法
 		sort.Ints(arr2)
 		// 判断排序结果是否一致
@@ -59,12 +59,12 @@ func equals(n []int, m []int) bool {
 // 生成两个相同的随机数组
 func randomArr(maxSize int, maxNum int) ([]int, []int) {
 	// 获得随机大小
-	max := randomInt(maxSize)
+	max := RandomInt(maxSize)
 	// 创建一个数组
 	arr := make([]int, max)
 	// 填充数组
 	for k, _ := range arr {
-		arr[k] = randomInt(maxNum)
+		arr[k] = RandomInt(maxNum)
 	}
 	// 复制当前切片
 	var arr2 []int
@@ -73,7 +73,7 @@ func randomArr(maxSize int, maxNum int) ([]int, []int) {
 }
 
 // 随机数函数
-func randomInt(maxSize int) int {
+func RandomInt(maxSize int) int {
 	// 初始化随机数种子
 	rand.Seed(time.Now().Unix())
 	// 生成一个随机数

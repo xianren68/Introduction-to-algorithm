@@ -1,14 +1,15 @@
 package main
 
 import (
-	basic_sort "algorithm/basic_sort"
-	"algorithm/utils"
+	"algorithm/basic_sort"
 	"fmt"
 )
 
 func main() {
-	a := []int{1, 2, 5, 8, 6, 7, 3}
-	fmt.Println(basic_sort.InsertSort(a))
-	utils.Logar(basic_sort.Bubble)
+	x := []int{1, 4, 3, 2, 5, 6, 7, 3, 6, 24, 55, 12, 77}
+
+	basic_sort.QuickSort(x, 0, len(x)-1)
+	fmt.Println(x)
+	// utils.Logar(basic_sort.QuickSort)
 
 }
