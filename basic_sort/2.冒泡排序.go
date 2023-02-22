@@ -1,6 +1,6 @@
 package basic_sort
 
-func Bubble(nums []int) []int {
+func BubbleSort(nums []int) []int {
 	// 判断临界条件
 	if nums == nil || len(nums) < 2 {
 		return nums

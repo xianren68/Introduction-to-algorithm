@@ -2,7 +2,6 @@ package basic_sort
 
 import (
 	"algorithm/utils"
-	"fmt"
 )
 
 // 快速排序
@@ -16,12 +15,9 @@ func QuickSort(nums []int, left, right int) {
 	nums[index], nums[right] = nums[right], nums[index]
 	// 将值排成三个区域
 	l, r := partition(nums, left, right)
-	fmt.Println(left, right, index)
-	fmt.Println(l, r)
 	// 递归
 	QuickSort(nums, left, l-1)
 	QuickSort(nums, r+1, right)
-	fmt.Println(nums)
 
 }
 

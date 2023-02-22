@@ -8,7 +8,7 @@ import (
 )
 
 // 对数器
-func Logar(fn1 func(nums []int, left, right int) []int) {
+func Logar(fn1 func(nums []int, left, right int)) {
 	testTimes := 50000 // 测试次数
 	maxSize := 1000    //最大测试容量
 	maxNum := 1000     //最大测试数据
@@ -20,15 +20,15 @@ func Logar(fn1 func(nums []int, left, right int) []int) {
 	for i := 0; i < testTimes; i++ {
 		// 接收用于测试的两个数组
 		arr1, arr2 := randomArr(maxSize, maxNum)
+		input = arr1
 		// 执行自己的方法
-		nums1 := fn1(arr1, 0, len(arr1)-1)
+		fn1(arr1, 0, len(arr1)-1)
 		// 官方方法
 		sort.Ints(arr2)
 		// 判断排序结果是否一致
-		if !equals(nums1, arr2) {
-			input = arr1
+		if !equals(arr1, arr2) {
 			target = arr2
-			my = nums1
+			my = arr1
 			equal = false
 			break
 		}
