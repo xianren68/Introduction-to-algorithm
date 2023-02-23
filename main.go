@@ -1,13 +1,14 @@
 package main
 
 import (
-	"algorithm/basic_sort"
-	"fmt"
+	"algorithm/link_list"
+	"algorithm/utils"
 )
 
 func main() {
-	x := []int{7, 3, 5, 9, 3, 7, 5, 11, 22, 57, 11, 112, 67}
-	basic_sort.BucketSort(x, 10)
-	fmt.Println(x)
+	x := []int{1, 4, 5, 2, 3, 6, 7}
+	head := utils.CreatLink(x)
+	head = link_list.PartionLinkTwo(head, 2)
+	utils.OutLink(head)
 
 }
