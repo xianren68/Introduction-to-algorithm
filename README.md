@@ -208,8 +208,10 @@ leetcode:https://leetcode.cn/problems/copy-list-with-random-pointer/comments/
 > 1. 通过hash表记录每个节点，在遍历的时候查看hash表中是否有此值，若有，则有环，并且第一个重复的值为环的起点
 > 2. **快慢指针，如果有环，快慢指针总会相遇，如果相遇则有环，这时让慢指针停留到原地，快指针从头结点再开始跑，它们再次
 > 相遇的地方就是入环的节点** （记住这个结论）
+
 leetcode:https://leetcode.cn/problems/c32eOV/
->https://github.com/xianren68/Introduction-to-algorithm/tree/main/link_list/3.有环链表.go
+>https://github.com/xianren68/Introduction-to-algorithm/tree/main/link_list/4.有环链表.go
+
 **链表相交**
 > 1. 判断两个链表是否有环
 > 2. 如果都没有环，则两个都遍历到末位，判断是否相等，若不相等，则不相交，若相等，记录它们的长度，让较长的先走它们的长度差距步，然后两个同时开始走，相遇的地方即为相交的地方
@@ -219,7 +221,7 @@ leetcode:https://leetcode.cn/problems/c32eOV/
 > 如不相同，则可以让一个入环节点在环上转一圈，如果碰到另一个则说明两个链表相交，并且他们俩两个的入环节点都可以看作第一个相交的节点
 > 如果没碰到，则二者没有相交
 
-> https://github.com/xianren68/Introduction-to-algorithm/tree/main/link_list/3.相交链表.go
+> https://github.com/xianren68/Introduction-to-algorithm/tree/main/link_list/5.相交链表.go
 ### 二叉树 
 #### 遍历
 ##### 递归 
