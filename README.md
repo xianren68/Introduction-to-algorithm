@@ -200,6 +200,7 @@ leetcode:https://leetcode.cn/problems/copy-list-with-random-pointer/comments/
 ```
 ###### 题解
 **切记千万不要脑部链表结构，最好画一下，看它们能不能用单链表实现**
+
 **前置知识**
 > 1. 求链表是否有环？
 > 单链表有环只能有一种类似6的结构，环永远在最后
