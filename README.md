@@ -1,4 +1,5 @@
-听b站大神左成云算法课做的笔记
+听b站大神左程云算法课做的笔记
+
 https://www.bilibili.com/video/BV13g41157hK/?p=7&spm_id_from=333.1007.top_right_bar_window_history.content.click
 老师讲过的题目，如果在力扣上有，我也会带上链接，方便大家练习
 ### 复杂度
@@ -25,21 +26,25 @@ leetcode:https://leetcode.cn/problems/single-number/
 #### 1.选择排序
 > 从0开始进行n次循环，每次循环从当前值到数组末位，选择出一个最大或最小的值与当前位置进行交换
 > 时间复杂度O(n^2)，空间复杂度o(1)
+
 > https://github.com/xianren68/Introduction-to-algorithm/tree/main/basic_sort/1.选择排序.go
 #### 2.冒泡排序
 > 与选择排序相似，每次循环找出最小或最大的值，将其移动到数组末位，不过选择排序会记录最小或最大的值
 > 一次循环只进行一次交换，而冒泡排序则对相邻元素比较，交换
 > 时间复杂度o(n^2),空间复杂度o(1)
+
 > https://github.com/xianren68/Introduction-to-algorithm/tree/main/basic_sort/2.冒泡排序.go
 #### 3.插入排序
 > 将要排序的值插入到已排序的值中，从第二值个开始遍历数组，将当前值前面的数作为已排序的序列，将当前值插入其中，
 > 从而让有序序列的长度再次加1，然后再继续向下遍历,相比较于前面两个排序，插入排序的性能因为数据而有所不同，
 > 当数据较为有序时，它的遍历次数会小很多，而选择与冒泡不会发生变化
 > 时间复杂度o(n^2),空间复杂度o(1)
+
 > https://github.com/xianren68/Introduction-to-algorithm/tree/main/basic_sort/3.插入排序.go
 #### 4.归并排序
 > 通过递归的方式，将给定的数据分为左右两个序列，分别让它们有序，然后将其合并，形成一个新的有序序列
 > 时间复杂度,根据master公式为O(N*logN)，空间复杂度为O(N)
+
 > https://github.com/xianren68/Introduction-to-algorithm/tree/main/basic_sort/4.归并排序.go
 ###### 拓展
 ```
@@ -64,6 +69,7 @@ leetcode:https://leetcode.cn/problems/single-number/
 ###### 快速排序3.0：
 >因为2.0版本的快排很受数据的影响，时间复杂度为O(n^2),3.0基于2.0将指定数num从最后一位，换成随机取，然后再与最后
 >一位进行交换，因为随机，所以不会受数据状况影响，时间复杂度为O(n * logN),空间复杂度为O(logN)
+
 > https://github.com/xianren68/Introduction-to-algorithm/tree/main/basic_sort/5.快速排序.go
 #### 6.堆排序
 ##### 堆（heap）
@@ -82,6 +88,7 @@ leetcode:https://leetcode.cn/problems/single-number/
 > 2. 再次遍历大根堆，每次将头节点交换到堆的最后，然后再通过出堆的操作让剩余的数据依然形成大根堆，头节点为最大值
 > 3. 重复二操作，直至堆中没有数据，此时数组成为升序序列
 > 时间复杂度O(N*logN),空间复杂度O(1)
+
 > https://github.com/xianren68/Introduction-to-algorithm/tree/main/basic_sort/6.堆排序.go
 ###### 拓展
 ```
@@ -99,6 +106,7 @@ leetcode:https://leetcode.cn/problems/single-number/
 > 1. 判断数据位数（十百千这种），根据数据的进制准备一个长度等于进制数的数组
 > 2. 从最低位开始,将它们从小到大装到准备好的数组中，得到一个最低位升序的序列，将其放回原数组
 > 3. 然后上升一位，再对原数组重复2操作，得到当前位得有序序列，将其放回原数组，一直重复上述操作，直到最高位也有序
+
 > https://github.com/xianren68/Introduction-to-algorithm/tree/main/basic_sort/7.基数排序.go
 **注意：不通过比较的排序对数据的要求很高，如果数组中数的范围很大，就不适用，而比较排序可以适用于任何数组**
 ```
@@ -142,6 +150,7 @@ Master公式：T(N) = a*T(N/b) + O(N^d)
 > 最后总能找到要查找的值，时间复杂度O(logN)
 > 其实只要能确定要查找的值必然在数组分隔的两端
 > 就可以用二分法
+
 > https://github.com/xianren68/Introduction-to-algorithm/tree/main/search/01_二分法.go
 ###### 拓展
 ```
