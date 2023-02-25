@@ -349,7 +349,29 @@ leetcode:https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-tree/
 
 > https://github.com/xianren68/Introduction-to-algorithm/tree/main/binary_tree/7.最近祖先.go
 
+###### 拓展
+```
+有一个如下节点组成的二叉树
+type TreeNode struct {
+    Val int  
+    Left *TreeNode
+    Right *TreeNode
+    Parent *TreeNode
+}
+parent指向节点的父节点，根节点的parent为null,给定一个二叉树中的值，求它的后继节点
+后继节点：中序遍历当前节点后面的节点为后继节点
+```
 
+```
+将一纸条对折一次，会出现一个凹下去的折痕，对折两次纸条上的折痕为凹凹凸，三次为凹凹凸凹凹凸凸
+给定一个值k，求其折痕分布
+```
+
+```
+二叉树序列化与反序列化
+以_作为一个值的结束，以#作为空值，然后将其链接成一个字符串即可
+反序列化，直接根据_将其分隔成数组
+```
 
 
 
