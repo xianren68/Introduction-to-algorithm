@@ -200,6 +200,7 @@ leetcode:https://leetcode.cn/problems/copy-list-with-random-pointer/comments/
 ```
 ###### 题解
 **切记千万不要脑部链表结构，最好画一下，看它们能不能用单链表实现**
+
 **前置知识**
 > 1. 求链表是否有环？
 > 单链表有环只能有一种类似6的结构，环永远在最后
@@ -209,7 +210,11 @@ leetcode:https://leetcode.cn/problems/copy-list-with-random-pointer/comments/
 > 相遇的地方就是入环的节点** （记住这个结论）
 
 leetcode:https://leetcode.cn/problems/c32eOV/
+<<<<<<< HEAD
 >https://github.com/xianren68/Introduction-to-algorithm/tree/main/link_list/3.有环链表.go
+=======
+>https://github.com/xianren68/Introduction-to-algorithm/tree/main/link_list/4.有环链表.go
+>>>>>>> 9635bd9a43d6c339b17cd4b874ddfcc01af6dd54
 
 **链表相交**
 > 1. 判断两个链表是否有环
@@ -220,7 +225,7 @@ leetcode:https://leetcode.cn/problems/c32eOV/
 > 如不相同，则可以让一个入环节点在环上转一圈，如果碰到另一个则说明两个链表相交，并且他们俩两个的入环节点都可以看作第一个相交的节点
 > 如果没碰到，则二者没有相交
 
-> https://github.com/xianren68/Introduction-to-algorithm/tree/main/link_list/3.相交链表.go
+> https://github.com/xianren68/Introduction-to-algorithm/tree/main/link_list/5.相交链表.go
 ### 二叉树 
 #### 遍历
 ##### 递归 
