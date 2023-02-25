@@ -73,7 +73,7 @@ leetcode:https://leetcode.cn/problems/single-number/
 > https://github.com/xianren68/Introduction-to-algorithm/tree/main/basic_sort/5.快速排序.go
 #### 6.堆排序
 ##### 堆（heap）
-> 一个存储了一棵完全二叉树的数组（从左到右来添值）
+> 一个存储了一棵完全二叉树的数组
 > 如果每个子树的根节点都比其子节点大，则称为大根堆，根节点是整个树中的最大值，反之则为小根堆
 ##### 性质
 > 1. 当前值在数组中的索引为i，则其左子节点的索引为（i*2)+1,右子节点为（i*2)+2
@@ -207,8 +207,10 @@ leetcode:https://leetcode.cn/problems/copy-list-with-random-pointer/comments/
 > 1. 通过hash表记录每个节点，在遍历的时候查看hash表中是否有此值，若有，则有环，并且第一个重复的值为环的起点
 > 2. **快慢指针，如果有环，快慢指针总会相遇，如果相遇则有环，这时让慢指针停留到原地，快指针从头结点再开始跑，它们再次
 > 相遇的地方就是入环的节点** （记住这个结论）
+
 leetcode:https://leetcode.cn/problems/c32eOV/
 >https://github.com/xianren68/Introduction-to-algorithm/tree/main/link_list/3.有环链表.go
+
 **链表相交**
 > 1. 判断两个链表是否有环
 > 2. 如果都没有环，则两个都遍历到末位，判断是否相等，若不相等，则不相交，若相等，记录它们的长度，让较长的先走它们的长度差距步，然后两个同时开始走，相遇的地方即为相交的地方
@@ -261,14 +263,88 @@ leetcode:
 
 ##### 层序遍历
 > 借助一个队列，将节点入队，出队时它的左右子节点入队，重复此过程，直到队列为空，返回的值即为层序
+
 leetcode:https://leetcode.cn/problems/binary-tree-level-order-traversal/
-> https://github.com/xianren68/Introduction-to-algorithm/tree/main/binary_tree/2.层序遍历.go
+
+> https://github.com/xianren68/Introduction-to-algorithm/tree/main/binary_tree/3.层序遍历.go
 
 ###### 拓展
 ```
 求二叉树最大宽度
 ```
 leetcode:https://leetcode.cn/problems/maximum-width-of-binary-tree/
+
+##### 常见的几种二叉树
+###### 1.搜索二叉树
+> 左子树的值必须小于当前值，右子树的值必须大于当前值
+###### 解法：
+> 中序遍历二叉搜索树，可以得到一个递增的序列
+> 1. 用一个全局变量存储每一个节点的值，通过中序遍历来获取每个值，判断其是否大于上一个值
+> 2. 如果它大于则继续判断下一个节点，并将值存到全局变量中
+> 3. 如果它小于等于，它就不是搜索二叉树
+
+leetcode:https://leetcode.cn/problems/validate-binary-search-tree/submissions/
+
+> https://github.com/xianren68/Introduction-to-algorithm/tree/main/binary_tree/4.二叉搜索树.go
+
+###### 2.完全二叉树
+> 按照顺序由左到右依次变满的树
+
+###### 解法：
+> 1. 通过层序遍历每个节点
+> 2. 判断这个节点是否存在右节点而不存在左节点，若是，则不是完全二叉树
+> 3. 如果一个节点只有左孩子而没有右孩子，或者它为叶子节点，则它后面的所有的节点都必须为叶子节点
+
+> https://github.com/xianren68/Introduction-to-algorithm/tree/main/binary_tree/5.完全二叉树.go
+
+###### 3.满二叉树
+> 一个二叉树，如果每一个层的结点数都达到最大值，则这个二叉树就是满二叉树。也就是说，如果一个二叉树的深度为K，且结点总数是(2^k) -1 ，则它就是满二叉树。
+
+###### 解法：
+> 1. 通过层序遍历得到最大深度与总节点个数，直接判断
+> 2. 通过递归判断左右节点是否都为完全二叉树，如果是，则返回true
+
+>https://github.com/xianren68/Introduction-to-algorithm/tree/main/binary_tree/6.满二叉树.go
+
+###### 4.平衡二叉树
+> 某二叉树中任意节点的左右子树的深度相差不超过1则为平衡二叉树
+
+###### 解法：
+> 当前值通过递归拿到左右子树的深度进行判断
+
+leetcode:https://leetcode.cn/problems/ping-heng-er-cha-shu-lcof/submissions/
+
+>https://github.com/xianren68/Introduction-to-algorithm/tree/main/binary_tree/7.平衡二叉树.go
+
+###### 二叉树递归套路
+> 判断当前值是否需要从左右子树获得数据，另左右子树返回的数据类型一致，再通过当前值判断或汇总
+> 1. 搜索二叉树
+> 从左子树获得其最小值并获得左子树是否为搜索二叉树，从右子树或的其最大值并获得左子树是否为搜索二叉树,两边的数据不一致，
+> 如果要用套路递归，则可以让每个子树返回三个值，（最大值，最小值，是否是搜索二叉树）,统一数据后即可递归
+> 满二叉树（返回子树是否为满的）以及平衡二叉树（返回子树的深度，子树是否为平衡二叉树）的判断用了这个套路
+> **这个套路虽然不是适用于任何情况，但适用性很广，很多和树有关的问题都可以试试这钟做法**
+
+###### 题目
+```
+1. 求两个节点的最近公共祖先节点
+```
+###### 解法：
+**1.hash表**
+>1. 通过hash表记录每个节点得父节点，通过父节点再找父节点，就可以形成一个祖先节点链
+>2. 将一个节点得祖先节点链抽离出来放到另一个hash表中，
+>3. 另一个节点通过hash表在祖先链上回溯，判断祖先节点是否在新抽离出的hash表中，若有，则直接返回
+**2.递归**
+> 两个节点在一棵树中，只有三种情况，要么在某棵子树的两侧，要么一个为另一个的父节点
+> 递归时，碰到这两个值直接返回，（若它是另一个值的祖先节点，则返回的就是它，若它不是另一个值祖先节点，则说明它们必然
+> 存在于某棵子树的两侧，它们得公共祖先节点在上面，直接返回让上面判断）
+> 然后通过父节点判断其所对应的另一侧子树有无另一个值，若没有
+> 则继续往上返回，若有，则说明它们就在这棵子树的两侧，直接返回当前子树的根节点即可
+
+leetcode:https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-tree/
+
+> https://github.com/xianren68/Introduction-to-algorithm/tree/main/binary_tree/7.最近祖先.go
+
+
 
 
 
