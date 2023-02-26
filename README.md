@@ -210,11 +210,9 @@ leetcode:https://leetcode.cn/problems/copy-list-with-random-pointer/comments/
 > 相遇的地方就是入环的节点** （记住这个结论）
 
 leetcode:https://leetcode.cn/problems/c32eOV/
-<<<<<<< HEAD
 >https://github.com/xianren68/Introduction-to-algorithm/tree/main/link_list/3.有环链表.go
 =======
 >https://github.com/xianren68/Introduction-to-algorithm/tree/main/link_list/4.有环链表.go
->>>>>>> 9635bd9a43d6c339b17cd4b874ddfcc01af6dd54
 
 **链表相交**
 > 1. 判断两个链表是否有环
