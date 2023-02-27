@@ -472,6 +472,7 @@ parent指向节点的父节点，根节点的parent为null,给定一个二叉树
 > 2. 从一个顶点出发，将它的所有出去的边加入到堆中，然后从堆中取出一个最小的边，将边的另一头加入到生成树中
 > 3. 边另一头的节点也有许多边出去，将它们都加入到堆中，然后再从中取出最小的边，重复上面过程
 > 4. 知道最小生成树的节点与原树的一样（遍历n-1次，每次拿到一个边，n为节点个数）
+[最小生成树](/map_test/5.最小生成树.go)
 
 参考：https://blog.csdn.net/qq_41181772/article/details/89357461?ops_request_misc=&request_id=&biz_id=102&utm_term=%E6%9C%80%E5%B0%8F%E7%94%9F%E6%88%90%E6%A0%91&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-0-89357461.142^v73^insert_down3,201^v4^add_ask,239^v2^insert_chatgpt&spm=1018.2226.3001.4187
 
