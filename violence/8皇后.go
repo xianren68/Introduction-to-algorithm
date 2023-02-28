@@ -1,4 +1,4 @@
-package nqueen
+package violence
 
 import (
 	"fmt"

@@ -1,10 +1,7 @@
 package main
 
-import (
-	nqueen "algorithm/Nqueen"
-)
+import "algorithm/violence"
 
 func main() {
-	nqueen.One()
-
+	violence.Hanoi(3, "左", "右", "中")
 }
