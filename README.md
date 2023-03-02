@@ -648,6 +648,7 @@ leetcode:https://leetcode.cn/problems/ZL6zAn/submissions/
 > 2. 对比str1与str2,直到它们不相等的位置e,k，拿到k这个节点的最大前缀长度，让e与k最大前缀长度的下一个位置f比较
 > 3. 如果还不相等，则f继续找它最大前缀的下一个位置与e相比，循环这个过程，直到e与str2的第一个节点也不相等，则从e开始继续往后比较，重复上述过程
 >时间复杂度为O(n)
+
 > 表达能力太差了，自己感觉说的很不清楚😵‍💫，强烈推荐看老师的视频
 
 [Kmp](basic_advance/5.Kmp.go)
