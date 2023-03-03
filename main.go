@@ -6,5 +6,6 @@ import (
 )
 
 func main() {
-	fmt.Println(basic_advance.Kmp("aaaccddefagiureghue", "hh"))
+	x := []int{1, 3, 7, 4, 5, 3, 3, 6, 7, 9}
+	fmt.Println(basic_advance.Monotonous(x))
 }
