@@ -1,4 +1,4 @@
-// package map_test
+package map_test
 
 // import (
 // 	"algorithm/utils"
