@@ -653,7 +653,7 @@ leetcode:https://leetcode.cn/problems/ZL6zAn/submissions/
 
 [Kmp](basic_advance/5.Kmp.go)
 
-### Manacher，滑动窗口，单调栈
+### 3.Manacher，滑动窗口，单调栈
 #### Manacher
 > 有一个字符串，求它最长的回文子串，时间复杂度在O(N)
 ##### 经典解法
@@ -711,7 +711,7 @@ leetcode:https://leetcode.cn/problems/sliding-window-maximum/submissions/
 ###### 题目
 ![](img/基础进阶/累计和与最小值.png)
 
-### 树形Dp套路 Morris遍历
+### 4.树形Dp套路 Morris遍历
 #### 树形Dp套路
 > 以前做二叉树的时候也提到过，能从左右节点要到信息在根节点整合答案都可以用套路
 > 将左右返回的值统一格式，然后再在根节点汇总即可
@@ -761,3 +761,15 @@ leetcode:https://leetcode.cn/problems/sliding-window-maximum/submissions/
 > 将前序遍历改成中-右-左是比较简单的,也不会多占用空间的
 
 [Morris遍历](basic_advance/11.Morris遍历.go)
+
+### 5.大数据类题目 位运算
+#### 大数据
+> 这个没什么能写的题目，把老师说的技巧放在下面了
+
+![](img/基础进阶/大数据解题技巧.png)
+#### 位运算
+###### 题目
+![](img/基础进阶/比大小.png)
+
+> 无法用比较，我们只能通过两个值相减结果的正负来判断
+[比较](/basic_advance/12.比大小.go)

@@ -6,6 +6,5 @@ import (
 )
 
 func main() {
-	x := []int{1, 3, 7, 4, 5, 3, 3, 6, 7, 9}
-	fmt.Println(basic_advance.Monotonous(x))
+	fmt.Println(basic_advance.Compare(113, 1))
 }
