@@ -6,5 +6,6 @@ import (
 )
 
 func main() {
-	fmt.Println(basic_advance.StrictRobot(6, 4, 2, 4))
+	x := []int{2, 3, 4, 5, 6, 7, 10}
+	fmt.Println(basic_advance.CoinViolence(x, 1))
 }
