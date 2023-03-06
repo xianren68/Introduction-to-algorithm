@@ -6,5 +6,5 @@ import (
 )
 
 func main() {
-	fmt.Println(basic_advance.Compare(113, 1))
+	fmt.Println(basic_advance.StrictRobot(6, 4, 2, 4))
 }
