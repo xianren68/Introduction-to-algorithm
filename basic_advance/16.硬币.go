@@ -39,3 +39,44 @@ func CProcess(nums []int, index int, aim int) int {
 	return int(math.Min(float64(p1), float64(p2+1)))
 
 }
+
+// 严格表
+func StrictCoin(nums []int, aim int) int {
+	// 目标小于0,没有结果
+	if aim < 0 {
+		return -1
+	}
+	// 创建一个二维表
+	table := make([][]int, len(nums)+1)
+	for i, _ := range table {
+		table[i] = make([]int, aim+1)
+		table[i][0] = 0
+	}
+	for i := 1; i <= aim; i++ {
+		table[len(nums)][i] = -1
+	}
+	// 改写递归
+	for i := len(table) - 2; i >= 0; i-- {
+		for a := 1; a <= aim; a++ {
+			// 自己不参加
+			p1 := table[i+1][a]
+			// 自己参加
+			p2 := -1
+			if a-nums[i] >= 0 {
+				p2 = table[i+1][a-nums[i]]
+			}
+			if p1 == -1 && p2 == -1 {
+				table[i][a] = -1
+			} else if p1 == -1 {
+				table[i][a] = p2 + 1
+			} else if p2 == -1 {
+				table[i][a] = p1
+			} else {
+				table[i][a] = int(math.Min(float64(p1), float64(p2+1)))
+			}
+
+		}
+	}
+	return table[0][aim]
+
+}

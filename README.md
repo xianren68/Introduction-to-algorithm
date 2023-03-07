@@ -807,3 +807,22 @@ k为小机器人必须要走的步数，小机器人每次只能走1步，或向
 2. 给定一个正数数组，数组每一位代表一枚硬币，给定一个面值aim
 求能达到这个面值的硬币的最小个数
 ```
+
+[最小硬币](basic_advance/16.硬币.go)
+
+```
+3. 拿牌游戏
+给定⼀个整型数组arr，代表数值不同的纸牌排成⼀条线。玩家A和玩家B依次拿⾛每张纸牌，规定玩家A先拿，玩家B后拿，但是每个玩家每次只能拿⾛最左或最右的纸牌，玩家A和玩家B都绝顶聪 明。
+请返回最后获胜者的分数
+```
+[拿牌游戏](basic_advance/17.拿牌游戏.go)
+
+```
+4.题⽬：给定五个参数n,m,i,j,k。
+表⽰在⼀个N*M的区域，Bob处在(i,j)点，每次Bob等概率的向上、下、左、右四个⽅向移动⼀步，Bob必须⾛K步。
+如果⾛完之后，Bob还停留在这个区域上，并且期间没有出过格⼦，就算Bob存活，否则就算Bob死亡。
+请求解Bob的⽣存概率，返回字符串表⽰分数的⽅式。
+```
+[鲍勃的生存概率](basic_advance/18.鲍勃的存活率.go)
+
+推荐：https://blog.csdn.net/m0_50946672/article/details/128310440?ops_request_misc=&request_id=&biz_id=102&utm_term=%E5%B7%A6%E7%A5%9Eb%E7%AB%99%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-0-128310440.142^v73^insert_down3,201^v4^add_ask,239^v2^insert_chatgpt&spm=1018.2226.3001.4187
