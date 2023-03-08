@@ -38,7 +38,7 @@ func Manacher(str string) int {
 			MaxRadius[i] = 1
 		} else {
 			// R>i，最少长度为i-R的距离或者i'的回文长度
-			MaxRadius[i] = int(math.Min(float64(R-i), float64(C<<1-1)))
+			MaxRadius[i] = int(math.Min(float64(R-i), float64(MaxRadius[C<<1-i])))
 		}
 		// 向两边扩展，直到值不相同或到达数组边界
 		for i+MaxRadius[i] < len(strArr) && i-MaxRadius[i] > -1 {
@@ -50,7 +50,7 @@ func Manacher(str string) int {
 		}
 		// 判断当前值的最大边界
 		// 如果超越了旧的则直接替换
-		if MaxRadius[i] > R {
+		if i+MaxRadius[i] > R {
 			R = i + MaxRadius[i]
 			C = i
 		}

@@ -678,6 +678,8 @@ leetcode:https://leetcode.cn/problems/ZL6zAn/submissions/
 
 [Manacher](basic_advance/6.Manacher.go)
 
+leetcode:https://leetcode.cn/problems/longest-palindromic-substring/
+
 #### 滑动窗口
 ![滑动窗口](img/基础进阶/滑动窗口.png)
 > 这种题目我们叫做滑动窗口
@@ -825,4 +827,19 @@ k为小机器人必须要走的步数，小机器人每次只能走1步，或向
 ```
 [鲍勃的生存概率](basic_advance/18.鲍勃的存活率.go)
 
+```
+5.题⽬：给定数组 arr，arr 中所有的值都为正数且不重复。
+每个值代表⼀种⾯值的货币，每种⾯值的货币可以使⽤任意张
+再给定⼀个整数 aim，代表要找的钱数，求组成 aim 的⽅法数。
+```
+
+[硬币2](basic_advance/19.硬币2.go)
+
 推荐：https://blog.csdn.net/m0_50946672/article/details/128310440?ops_request_misc=&request_id=&biz_id=102&utm_term=%E5%B7%A6%E7%A5%9Eb%E7%AB%99%E7%AE%97%E6%B3%95%E7%AC%94%E8%AE%B0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduweb~default-0-128310440.142^v73^insert_down3,201^v4^add_ask,239^v2^insert_chatgpt&spm=1018.2226.3001.4187
+
+> 基础班学暴力递归的时候很难理解递归，现在逐渐理解递归，但感觉严格表还是比较难，可能等中级班会逐渐理解🤣
+
+### 7.有序表
+> 只要了解原理即可，面试一般不会手写
+
+推荐：https://www.cnblogs.com/yrxing/p/15770355.html
