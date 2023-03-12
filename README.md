@@ -999,5 +999,6 @@ leetcode:https://leetcode.cn/problems/rotate-matrix-lcci/submissions/
 
 [出现次数前k的字符串](middle/19.出现次数为前k个的字符串.go)
 > 力扣这个字典序让我写堆写的很难受
+> 好像直接排序还简单点
 
 leetcode:https://leetcode.cn/problems/top-k-frequent-words/submissions/
