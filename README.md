@@ -950,3 +950,54 @@ leetcode:https://leetcode.cn/problems/ba-shu-zi-fan-yi-cheng-zi-fu-chuan-lcof/su
 > 从矩阵右上角开始遍历
 
 [数字是否存在于排序矩阵中](middle/14.判断数字是否在矩阵中.go)
+
+![](img/中级/洗衣机问题.png)
+> 这种问题记住，判断每个位置它左右两边物品的个数
+> 如果多，则为正，如果少则为负数
+> 1. 如果两边都为负数，则两边都缺需要中间抛出，因为只能抛出一件，所以总次数为两个数的绝对值相加
+> 2. 如果一个为正一个为负，则当前位置既要抛出，也要收入，这两件事情可以同时进行，所以操作的次数为两者中较大的绝对值
+> 3. 如果两个都为正，则两边同时向中间抛，需要的次数也是两者中较大的
+> 4. 最终，所有位置里面操作次数最多的即为计算的最少轮数
+
+[洗衣机问题](middle/15.洗衣机问题.go)
+
+leetcode:https://leetcode.cn/problems/super-washing-machines/submissions/
+
+![](img/中级/zigzag方式打印矩阵.png)
+> 做此类打印矩阵或操作矩阵位置的题，需要的是宏观视角，不能盯着每个位置如何变化
+> 这道题需要两个变量n,m,它们一开始都位于矩阵左上角点
+> 1. n向左移动，m向下移动,打印它们连线上的元素
+> 2. n到最左边，n向下移动，m到最右边，m向左移动，打印n和m连线上的元素
+
+![](img/中级/之字遍历.png)
+> 从上面的图可以看到我们总共走的次数
+> m和n两个点，如果是偶数次则从m到n,如果是奇数，则从n到m遍历打印
+
+[之字遍历矩阵](middle/16.zigzag.go)
+![](img/中级/顺时针打印矩阵.png)
+> 分层遍历，将一个矩阵分成很多层
+> 从外层开始一层一层的打印
+> 每次只需要知道左上角点和右下角的点即可
+
+[顺时针打印矩阵](middle/17.顺时针打印矩阵.go)
+> 这题的临界条件还是蛮烦的
+
+leetcode:https://leetcode.cn/problems/shun-shi-zhen-da-yin-ju-zhen-lcof/submissions/
+
+![](img/中级/旋转矩阵.png)
+> 和上题一样，分层处理
+> 不过这个在每一层中还要分组交换
+
+[旋转矩阵](middle/18.旋转矩阵.go)
+
+leetcode:https://leetcode.cn/problems/rotate-matrix-lcci/submissions/
+
+![](img/中级/出现次数前k的字符串.png)
+> 这一题用堆来解答，通过维护一个大根堆或小根堆
+> 如果是大根堆，则将所有字符串及其次数所组成的键值对入堆，然后再取出前k个
+> 如果是小根堆，则只用k的长度，以后的元素如果小于堆头，则无法进堆
+
+[出现次数前k的字符串](middle/19.出现次数为前k个的字符串.go)
+> 力扣这个字典序让我写堆写的很难受
+
+leetcode:https://leetcode.cn/problems/top-k-frequent-words/submissions/

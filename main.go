@@ -2,8 +2,9 @@ package main
 
 import (
 	"algorithm/middle"
+	"fmt"
 )
 
 func main() {
-	middle.StackSort([]int{99, 22, 11, 2, 4, 7, 5, 1, 0})
+	fmt.Println(middle.TopKFrequent([]string{"i", "love", "leetcode", "i", "love", "coding"}, 1))
 }
