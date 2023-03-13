@@ -6,5 +6,5 @@ import (
 )
 
 func main() {
-	fmt.Println(middle.TopKFrequent([]string{"i", "love", "leetcode", "i", "love", "coding"}, 1))
+	fmt.Println(middle.Adjust([]int{1, 4, 1, 8, 2}))
 }
