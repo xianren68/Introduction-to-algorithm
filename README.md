@@ -1067,3 +1067,16 @@ leetcode:https://leetcode.cn/problems/implement-queue-using-stacks/submissions/
 > 3. l==0,只有t==k才可以
 > 4. 都不等于0,t==k即可
 
+>斐波拉契数列等问题的优化
+>线代没有好好听，就先放一放吧
+
+推荐： https://www.nowcoder.com/discuss/375297656376094720?sourceSSR=users
+
+
+![](img/中级/牛牛的背包.png)
+> 暴力递归
+> 动态规划数组太大了，好像还不如递归
+
+[牛牛的背包](middle/27.牛牛的背包.go)
+牛客：https://www.nowcoder.com/profile/885318765/codeBookDetail?submissionId=202724382
+

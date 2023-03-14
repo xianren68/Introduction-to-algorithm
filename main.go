@@ -6,5 +6,6 @@ import (
 )
 
 func main() {
-	fmt.Println(middle.Adjust([]int{1, 4, 1, 8, 2}))
+	fmt.Println(middle.Snack([]int{1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1}, 1046378562))
+
 }
