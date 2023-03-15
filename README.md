@@ -1080,3 +1080,30 @@ leetcode:https://leetcode.cn/problems/implement-queue-using-stacks/submissions/
 [牛牛的背包](middle/27.牛牛的背包.go)
 牛客：https://www.nowcoder.com/profile/885318765/codeBookDetail?submissionId=202724382
 
+![](img/中级/打印目录.png)
+> 这一题用前缀树来做，需要注意的是需要按顺序排列
+> 因为go没有hash表，我在入栈的时候排了序
+
+[打印目录](middle/28.打印目录.go)
+
+牛客：https://www.nowcoder.com/practice/64b472c9bed247b586859978d13145ad?tpId=62&tqId=29457&tPage=1&ru=%2Fkaoyan%2Fretest%2F2002&qru=%2Fta%2Fsju-kaoyan%2Fquestion-ranking&tab=answerKey
+> 我自己测试感觉没问题，但就是过不了😭😭
+
+![](img/中级/二叉树转双向链表.png)
+> 用的依然是二叉树的递归套路
+> 把左右子树转化为双向链表，并返回头尾节点
+> 与当前节点连接即可
+
+[二叉树转双向链表](middle/29.二叉树转链表.go)
+> 可以去这里测试代码
+
+leetcode:https://leetcode.cn/problems/minimum-distance-between-bst-nodes/
+![](img/中级/最大的二叉子树.png)
+> 这题依然是套路，就先放放 
+
+![](img/中级/连续的最高分.png)
+> 这是经典的最大子数组问题
+> 我们可以用动态规划，判断以每个位置结尾的子串的最大值
+> 还可以用假设法，感觉有点类似括号字符串
+
+[连续的最高分](middle/30.连续的最高分.go)

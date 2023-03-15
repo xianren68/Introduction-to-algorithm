@@ -6,6 +6,6 @@ import (
 )
 
 func main() {
-	fmt.Println(middle.Snack([]int{1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1}, 1046378562))
+	fmt.Println(middle.HightScore([]int{1, -1, -1, -10, -11, -4, -6, -9, -20, -10, -2}))
 
 }
