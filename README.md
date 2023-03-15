@@ -1107,3 +1107,7 @@ leetcode:https://leetcode.cn/problems/minimum-distance-between-bst-nodes/
 > 还可以用假设法，感觉有点类似括号字符串
 
 [连续的最高分](middle/30.连续的最高分.go)
+leetcode:https://leetcode.cn/problems/lian-xu-zi-shu-zu-de-zui-da-he-lcof/submissions/
+
+![](img/中级/矩阵累加和.png)
+> 先放放
