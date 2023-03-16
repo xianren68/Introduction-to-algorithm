@@ -6,6 +6,10 @@ import (
 )
 
 func main() {
-	fmt.Println(middle.HightScore([]int{1, -1, -1, -10, -11, -4, -6, -9, -20, -10, -2}))
+	pre := []int{1, 2, 3, 4, 5, 6, 7}
+	mid := []int{3, 2, 4, 1, 6, 5, 7}
+	cur := make([]int, 7)
+	middle.Cur(pre, mid, cur, 0, 6, 0, 6, 0, 6)
+	fmt.Println(cur)
 
 }
