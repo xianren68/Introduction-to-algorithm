@@ -1146,6 +1146,9 @@ leetcode:https://leetcode.cn/problems/lian-xu-zi-shu-zu-de-zui-da-he-lcof/submis
 
 ![](img/中级/最长递增子序列.png)
 > 动态规划
+> 还有一个贪心的策略，感觉不是很能理解
 
 [最长递增子序列](middle/34.最长子序列问题.go)
 leetcode:https://leetcode.cn/problems/longest-increasing-subsequence/submissions/
+
+> ok 中级班还有两节，实在看不下去了，先休息一波，准备面试 👻
